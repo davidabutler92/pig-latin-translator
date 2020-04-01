@@ -2,9 +2,12 @@
 $(document).ready(function() {
   $("form#pig-latin").submit(function(event) {
     event.preventDefault();
-    var inputPhrase = $("input#phrase").val();
-    // console.log(inputPhrase);
-    var  = pigLatin(inputPhrase);
+
+    var englishPhrase = $("input#phrase").val();
+  
+    var pigLatinPhrase = pigLatin(englishPhrase);
+
+    $(".pig-latin").text(pigLatinPhrase);
 
     $("#result").show();
 
