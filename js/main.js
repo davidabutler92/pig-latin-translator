@@ -15,3 +15,25 @@ $(document).ready(function() {
   });
 });
 
+var pigLatin = function pigLatin(englishPhrase) {
+  
+  var vowels = ["a","e","i","o","u"];
+  var englishArr = englishPhrase.split("");
+  // console.log(englishArr);
+  var vowelIndex
+
+  //find vowel index in a string
+  for(var i = 0; i < englishArr.length; i++) {
+    for(var j = 0; j < vowels.length; j++) {
+      if(englishArr[i] === vowels[j]) {
+        if(vowelIndex === undefined) {
+          vowelIndex === englishArr.indexOf(englishArr[i]);
+          console.log(vowelIndex);
+        }
+      }
+    }
+  } 
+
+
+};
+
